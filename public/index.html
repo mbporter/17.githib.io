@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Music Albums</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Music Albums</h1>
+        <button id="add-album-button">Add New Album</button>
+    </header>
+
+    <main>
+        <section id="album-list" class="album-list"></section>
+
+        <div id="album-form-container" class="hidden">
+            <h2 id="form-title">Add New Album</h2> 
+            <form id="album-form" enctype="multipart/form-data">
+                <input type="hidden" name="_id" value="-1">
+                
+                <label for="name">Album Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="artist">Artist:</label>
+                <input type="text" id="artist" name="artist" required>
+
+                <label for="releaseYear">Release Year:</label>
+                <input type="number" id="releaseYear" name="releaseYear" required>
+
+                <label for="genre">Genre:</label>
+                <input type="text" id="genre" name="genre" required>
+
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" required></textarea>
+
+                <label for="songs">Songs (comma-separated):</label>
+                <textarea id="songs" name="songs" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
